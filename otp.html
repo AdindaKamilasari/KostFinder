@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP - KostFinder</title>
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/otp.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- LEFT -->
+    <div class="left">
+        <img src="assets/hero_4.png" alt="Room Illustration">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <a href="forgot_password.html" class="back">
+            <img src="assets/back_arrow.png" alt="Kembali">
+        </a>
+
+
+        <div class="form-wrapper">
+            <h1>Verifikasi Email / Nomor Handphone</h1>
+
+            <p>Nomor Handphone ini telah terdaftar sebagai akun pencari kos di KostFinder</p>
+
+            <p>Mohon isi kolom berikut dengan kode verifikasi yang kami kirimkan ke *****123 melalui WhatsApp</p>
+
+            <form class="otp-form">
+                <div class="otp-underline">
+                    <input type="text" maxlength="1" inputmode="numeric" data-index="0">
+                    <input type="text" maxlength="1" inputmode="numeric" data-index="1">
+                    <input type="text" maxlength="1" inputmode="numeric" data-index="2">
+                    <input type="text" maxlength="1" inputmode="numeric" data-index="3">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/otp.js"></script>
+
+</body>
+</html>

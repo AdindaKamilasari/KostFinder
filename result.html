@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian - KostFinder</title>
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo_3.png" alt="KostFinder Logo" class="navbar-custom-logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="user-menu-container">
+            <div class="user-profile-trigger" id="userIconBtn">
+                <div class="avatar-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <span class="user-label" id="userLabel">Masuk / Daftar</span>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </div>
+
+            <div class="dropdown-glass" id="userDropdown">
+
+                <!-- GUEST -->
+                <div id="guestMenu">
+                    <div class="dropdown-welcome">
+                        <strong>Selamat Datang!</strong>
+                        <span>Temukan kost impianmu sekarang</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <a href="login.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-right-to-bracket"></i></div>
+                        <span>Masuk</span>
+                    </a>
+                    <a href="register.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-user-plus"></i></div>
+                        <span>Daftar</span>
+                    </a>
+                </div>
+
+                <!-- LOGGED IN -->
+                <div id="userMenu">
+                    <div class="dropdown-welcome">
+                        <strong id="userFullName">User</strong>
+                        <span>Pencari Kost</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <a href="404.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
+                        <span>Profil Saya</span>
+                    </a>
+                    <a href="404.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-heart"></i></div>
+                        <span>Kost Tersimpan</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a href="#" id="logoutBtn" class="glass-item logout-link">
+                        <div class="icon-box logout-icon">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                        <span>Keluar</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-filter-section">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" value="Palembang">
+                <i class="fa-solid fa-sliders filter-icon" id="openFilterBtn"></i>
+                <button class="search-btn">Cari <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="result" id="hasil">
+        <div class="back-link">
+            <a href="home.html"><i class="fa-solid fa-arrow-left"></i> Menampilkan Hasil Pencarian</a>
+        </div>
+
+        <div class="card-grid" id="cardGrid"></div>
+    </section>
+
+    <footer class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="assets/logo_2.png" alt="KostFinder Logo" class="footer-custom-logo">
+                </a>
+            </div>
+
+            <div class="form-wrapper">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Lengkap">
+                    <input type="email" placeholder="E-Mail">
+                    <textarea rows="4" placeholder="Pesan"></textarea>
+                    <button type="button" class="btn-submit">Kirim</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>KostFinder@yahoo.com</p>
+                <p>Stay Connected with Us</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="filterModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Filter</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+
+            <div class="filter-section">
+                <h3>Jenis Sewa</h3>
+                <div class="button-group">
+                    <button class="btn-option active">Bulanan</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Tipe Penghuni</h3>
+                <div class="radio-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="tipe" checked>
+                        <span class="checkmark-circle"></span> Semua
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="tipe">
+                        <span class="checkmark-circle"></span> Campur
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="tipe">
+                        <span class="checkmark-circle"></span> Pria
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="tipe">
+                        <span class="checkmark-circle"></span> Wanita
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Fasilitas</h3>
+                <div class="checkbox-grid">
+                    <label class="custom-check">
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span> TV
+                    </label>
+                    <label class="custom-check">
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span> WiFi
+                    </label>
+                    <label class="custom-check">
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span> Kamar Mandi
+                    </label>
+                    <label class="custom-check">
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span> Air Minum
+                    </label>
+                    <label class="custom-check">
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span> Kasur
+                    </label>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Lokasi</h3>
+                <div class="radio-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="lokasi" value="palembang" checked>
+                        <span class="checkmark-circle"></span> PALEMBANG
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="lokasi" value="bogor">
+                        <span class="checkmark-circle"></span> BOGOR
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="lokasi" value="depok">
+                        <span class="checkmark-circle"></span> DEPOK
+                    </label>
+                </div>
+            </div>
+
+            <button id="applyFilterBtn" class="btn-apply">Terapkan Filter</button>
+
+        </div>
+    </div>
+
+<script src="js/navbar.js"></script>
+<script type="module" src="js/result.js"></script>
+
+</body>
+</html>

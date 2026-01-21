@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - KostFinder</title>
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- LEFT -->
+    <div class="left">
+        <img src="assets/hero_2.png" alt="Room Illustration">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <a href="index.html" class="back">
+            <img src="assets/back_arrow.png" alt="Kembali">
+        </a>
+
+
+        <div class="form-wrapper">
+            <h1>Login ke KostFinder</h1>
+
+            <form>
+                <label>Email / Nomor Handphone</label>
+                <input type="text" id="email" placeholder="081234567890">
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="••••••••••">    
+            </form>
+
+            <a href="forgot_password.html" class="forgot">Lupa Password?</a>
+
+            <button id="submit" type="button">Login</button>
+
+            <p class="register">
+                Belum punya akun KostFinder?
+                <a href="register.html">Daftar sekarang</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>

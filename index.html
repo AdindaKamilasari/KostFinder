@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KostFinder - Cari Kos Eksklusif & Nyaman</title>
+
+    <link rel="icon" href="assets/favicon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo_3.png" alt="KostFinder Logo" class="navbar-custom-logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="user-menu-container">
+            <div class="user-profile-trigger" id="userIconBtn">
+                <div class="avatar-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <span class="user-label" id="userLabel">Masuk / Daftar</span>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </div>
+
+            <div class="dropdown-glass" id="userDropdown">
+
+                <!-- GUEST -->
+                <div id="guestMenu">
+                    <div class="dropdown-welcome">
+                        <strong>Selamat Datang!</strong>
+                        <span>Temukan kost impianmu sekarang</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <a href="login.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-right-to-bracket"></i></div>
+                        <span>Masuk</span>
+                    </a>
+                    <a href="register.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-user-plus"></i></div>
+                        <span>Daftar</span>
+                    </a>
+                </div>
+
+                <!-- LOGGED IN -->
+                <div id="userMenu">
+                    <div class="dropdown-welcome">
+                        <strong id="userFullName">User</strong>
+                        <span>Pencari Kost</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <a href="404.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
+                        <span>Profil Saya</span>
+                    </a>
+                    <a href="404.html" class="glass-item">
+                        <div class="icon-box"><i class="fa-solid fa-heart"></i></div>
+                        <span>Kost Tersimpan</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a href="#" id="logoutBtn" class="glass-item logout-link">
+                        <div class="icon-box logout-icon">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                        <span>Keluar</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-premium">
+        <div class="hero-overlay-shapes"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">Solusi Hunian Mahasiswa & Pekerja</h4>
+                <h1 class="hero-title">Temukan Kenyamanan <br><span>Di Setiap Sudut</span> Kostmu.</h1>
+                <p class="hero-description">
+                    KostFinder menghubungkan Anda dengan ribuan penyedia kost terverifikasi di Bogor, Depok, dan Palembang dengan sistem kontak langsung tanpa perantara.
+                </p>
+                <div class="hero-actions">
+                    <a href="home.html" class="btn-main">Eksplorasi Sekarang <i class="fa-solid fa-compass"></i></a>
+                    <div class="hero-trust">
+                        <div class="avatar-group">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                        <span>10k+ Pencari Kost Bergabung</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-glass">
+        <div class="stat-box">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Kost Terverifikasi</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+            <div class="stat-number">12k+</div>
+            <div class="stat-label">Ulasan Positif</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Layanan Dukungan</div>
+        </div>
+    </section>
+
+    <section id="features" class="features-modern">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lebih Dari Sekadar Cari Kos</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-layout">
+                <div class="feature-item large">
+                    <i class="fa-solid fa-shield-check"></i>
+                    <h3>Verifikasi Ketat</h3>
+                    <p>Kami menjamin keamanan data pemilik dan pencari kos untuk mencegah penipuan di platform kami.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Pesan Instan</h3>
+                    <p>Hubungi pemilik kost langsung via WhatsApp dengan satu klik.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Lokasi Strategis</h3>
+                    <p>Cari kost terdekat dari kampus (UI, IPB, UNSRI) secara presisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Kami adalah platform pencarian dan pemesanan kos yang hadir untuk memudahkan kamu menemukan hunian nyaman sesuai kebutuhan.</p>
+            <div class="mission-title">Misi Kami</div>
+            <ul>
+                <li>Membantu mahasiswa, pekerja, maupun perantau menemukan kos dengan cepat dan mudah.</li>
+                <li>Memberikan transparansi harga dan fasilitas agar kamu bisa memilih dengan lebih bijak.</li>
+                <li>Menjadi jembatan antara pemilik kos dan pencari kos dengan sistem yang praktis dan terpercaya.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="assets/logo_2.png" alt="KostFinder Logo" class="footer-custom-logo">
+                </a>
+            </div>
+
+            <div class="form-wrapper">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Lengkap">
+                    <input type="email" placeholder="E-Mail">
+                    <textarea rows="4" placeholder="Pesan"></textarea>
+                    <button type="button" class="btn-submit">Kirim</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>KostFinder@yahoo.com</p>
+                <p>Stay Connected with Us</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer">
+        <p>&copy; 2025 KostFinder Indonesia. Built with Comfort.</p>
+    </div>
+
+<script src="js/navbar.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
